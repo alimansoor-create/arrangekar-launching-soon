@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <title>ArrangeKar | Launching Soon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Red Hat Display", sans-serif;
+        text-align: center;
+      }
+
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        justify-items: center;
+        padding: 4em;
+
+        --offset-v: -18em;
+        --offset-h: -12em;
+
+        /* background-image: linear-gradient(#d5bda3, #95acbc)
+            url("./assets/circle.svg"),
+          url("./assets/circle.svg");
+        background-repeat: no-repeat;
+        background-position: initial, top var(--offset-v) left var(--offset-h),
+          bottom var(--offset-v) right var(--offset-h);
+        background-size: initial, 40em, 40em; */
+
+        background-image: linear-gradient(45deg, #ffe6cc, #ffffff);
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: 4rem;
+        color: #8c6238;
+        margin-bottom: 0.4em;
+      }
+
+      p {
+        font-weight: normal;
+        font-size: 2rem;
+        color: #2b3946;
+      }
+
+      img {
+        width: 10em;
+        margin-bottom: 3em;
+      }
+
+      span {
+        color: #8c6238;
+      }
+
+      @media (max-width: 700px) {
+        main {
+          /* --offset-v: -14em;
+          --offset-h: -8em;
+
+          background-size: 30em; */
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+        img {
+          width: 8em;
+        }
+      }
+
+      @media (max-width: 400px) {
+        main {
+          --offset-v: -10em;
+          --offset-h: -4em;
+
+          /* background-size: 20em; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="./assets/camera-icon.png" />
+      <h1>Launching <span>soon</span>. Stay tuned.</h1>
+      <p>ArrangeKar</p>
+    </main>
+  </body>
+</html>
